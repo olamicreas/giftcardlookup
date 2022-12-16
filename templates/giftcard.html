@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Giftcard</title>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .gap {
+      height: 60px;
+      clear: both;
+      display: block;
+      margin: 0;
+      text-align: center;
+    }
+    .lead {
+      font-size: 1.2em;
+      line-height: 1.4;
+      display: block;
+      font-weight: normal;
+      font-variant: small-caps;
+      font-family: "Poppins", sans-serif;
+
+    }
+    
+   
+    .ops {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 113%;
+      width: 100%;
+      content: '';
+      transform: skewY(17deg);
+      z-index: 1;
+      background: #fff;
+      color: white;
+    
+      
+
+    }
+    nav {
+      
+    }
+    nav, .gap {
+      display: block;
+      transform: skewY(-17deg);
+    }
+    
+    html, body {
+      overflow-x: hidden;
+
+    }
+    body {
+
+    }
+    @media only screen and (min-width: 1024px){
+
+    .ops {
+    transform: skewY(10deg);
+    height: 90%;
+    }
+    .f{
+      display: flex;
+      justify-content: space-around;
+    }
+    .l {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .immg {
+      padding: 30px;
+      
+      display: flex;
+      
+      
+    }
+  
+    .new {
+      position: absolute;
+      top: 200px;
+      margin-top: 200px; 
+    
+
+    }
+    
+    .con {
+      margin-top: 220px;
+    }
+    .ui {
+      margin-top: 50px;
+    }
+    .pic {
+      width: 500px;
+      height: 500px;
+    }
+    .pp {
+      width: 50%;
+      height: 500px;
+    }
+    .another {
+      position: absolute;
+      top: 100px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 100px;
+    }
+    .balance {
+      position: absolute;
+      top: 50px;
+      margin-top: 200px;
+      width: 100%;
+    }
+    .protect {
+      position: absolute;
+      top: -140px;
+      bottom: 0;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .per {
+      position: absolute;
+      width: 100%;
+      top: -360px;
+    }
+    .last {
+      position: absolute;
+      top: -490px;
+    }
+    .container {
+      width: 100%;
+    }
+    .smooth {
+      display: flex;
+      justify-content: center;
+    }
+    .image {
+      margin-top: 3%;
+    }
+
+    .box {
+      width: 550px; 
+      height: 100px; 
+      border: 1px;
+      margin-top: 5%;
+    }
+    .bob {
+      width: 550px; 
+      height: 100px; 
+      border: 1px;
+      margin-top: 2%;
+
+    }
+
+    nav, .gap {
+      transform: skewY(-10deg);
+    }
+
+  }
+
+
+
+
+  .new {
+    position: absolute;
+
+    color: rgba(55, 69, 116, 0.7);
+    margin-top: 400px; 
+    
+
+  }
+  .another {
+    position: absolute;
+    margin-top: 700px;
+  }
+  .balance {
+    position: absolute;
+    margin-top: 1550px;
+    width: 100%;
+    background-color: #f7f8ff;
+
+  }
+  .protect {
+    position: absolute;
+    background: #3455ff;
+    width: 100%;
+    margin-top: 2490px;
+  }
+  .last {
+    position: absolute;
+    background: #3455ff;
+    width: 100%;
+    margin-top: 3870px;
+
+  }
+  .container {
+    width: 100%;
+    
+  }
+  .per {
+    position: absolute;
+    background: #fff;
+    color: #637097;
+    margin-top: 3150px;
+    
+
+  }
+  .line {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    content: '';
+    margin-left: -40px;
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background: #39a9ff;
+    box-sizing: border-box;
+  }
+  .gridd {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    
+  }
+  .item {
+
+    padding: 20px;
+    text-align: center;
+
+  }
+  .texts {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .81em;
+    line-height: 1.1;
+    padding: 20px;
+}
+
+  .ox {
+    width: 100%; 
+    height: 500px; 
+    border: 1px;
+    margin-top: 10%;
+    padding: 20px;
+  }
+  .forms {
+    padding: 16px;
+    width: 100%
+    
+  }
+
+
+
+  input, select{
+    padding: 15px;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    background: #f6f3f3;
+
+  }
+  }
+  #flexing {
+    
+    text-align: center;
+    
+  }
+  .yay {
+    background-color: white;
+  }
+  .indent {
+    color: #c02b0a;
+    display: inline-block;
+    font-size: 13.008px;
+    padding-left: .125em;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  span {
+    font-size: 20px;
+  }
+  label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding: 0;
+    color: #637097;
+  }
+  </style>
+  <body>
+    
+    <div style="background-color: #3455ff; height: 400px;">
+      <div class="ops" style="background-color: #3455ff">
+        <div style="padding: 25px;">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Gift card lookup</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#another">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#balance">Check balance</a>
+                </li>
+                
+              </ul>
+            </div>
+          </nav>
+          <br>
+          
+          <div class="gap">
+            <h1>#1 Best Gift Card Balance Online Checker</h1>
+            <br>
+            <div class="smooth">
+              <div style="" class="box">
+                <p class="lead">An efficient frame work that provides a robust balance check, Using a smart anti logarithm that runs very fast to provide an adequate balance info</p>
+                <br>
+
+                
+                <a href="#balance" class="btn btn-outline-warning" style="color: white; border: 2px #ffc123 solid;">Chek Balance</a>
+              </div>
+              <div class="image">
+                  <br>
+                  <img src= "/static/gift.png" width="420">
+                </div>
+              
+                
+              
+
+              
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+       
+    </div>
+
+    <div>
+   
+    <div class="new">
+      
+        <h6 class="texts"> our <br> partners </h6>
+      
+      <div class="gridd">
+         <div class="item"><img src="/static/google.png" width="80px;"></div>
+         <div class="item"><img src="/static/apple.png" width="80px;"></div>
+         <div class="item" ></div>
+         <div class="item"><img src="/static/ebay.png" width="90px;"></div>
+         <div class="item"><img src="/static/amazon.png" width="90px"></div>
+         <div class="item"><img src="/static/xbox.png" width="90px;"></div>
+      </div>
+    </div>
+    <div class="another" id="another">
+      
+      <img src="/static/graph.png" width="100%" height="400px;" class="pp ox">
+      >
+      <div class="con" style="text-align: center;">
+        <h2>We’ve built a Decentralized Platform</h2>
+        <br>
+        <p class="lead">Our gift card checker is built on a decentralized platform to ensure clients gift card details are not stored anywhere in the server. Your card details are immediately deleted after verification operations.</p>
+      </div>
+    </div>
+
+
+    <div class="balance" id="balance">
+      <div class="container">
+        <h2 style="text-align: center; font-size: 28px;">Check Card Balance<br></h2>
+
+        <p class="line"></p>
+          
+        <div class="f"> 
+          <div class="image">
+            <br>
+            <br>
+            <img src="/static/balance.png" width="100%;">
+          </div>
+          
+          <form class="forms ui" method="POST">
+           
+            <label>Select type of Card <span class="indent">*</span></label>
+            <select name="card">
+              <option>Type of Card</option>
+              <option>Apple</option>
+              <option>Amazon</option>
+              <option>Ebay</option>
+              <option>Steam</option>
+              <option>Xbox</option>
+              <option>Googleplay</option>
+              <option>Playstaion</option>
+              <option>Sephora</option>
+              <option>RazerGold</option>
+              <option>Nordstorm</option>
+              <option>Nike</option>
+              <option>Mastercard</option>
+              <option>Vanilla</option>
+              <option>Wallmart Visa</option>
+              <option>Visa Silvery White</option>
+            </select>
+            <label>Currency <span class="indent">*</span></label>
+              <select name="cash">
+              <option>USD</option>
+              <option>GBP</option>
+              <option>EUR</option>
+              <option>CAD</option>
+              
+            </select> 
+
+            <label>Amount <span class="indent">*</span></label>
+            <input type="number" name="amount" class="yay">
+            <label>Redemption Code <span class="indent">*</span></label>
+            <input type="text" name="redem" class="yay" placeholder="0 to 20 characters">
+
+            <br>
+            <br>
+            <button type="submit" class="btn btn-outline-info" style="width: 100%;">check balance</button>        
+          </form>  
+        </div>
+      
+      </div>
+
+    </div>
+    <div class="protect">
+      <div class='contain'>
+        <div class="f">
+      
+          <div style="padding: 25px;">
+            
+            <img src="/static/shield.png" width="100%;">
+          </div>
+          <div style="text-align: center; color: white;" class="ui">
+            <h2>Secured and Encrypted.</h2>
+            <br>
+            <p class="lead">We at Gift Card lookup makes sure customers giftcard details are secured and encrypted. No attacker or false identity can intercept your verification operations</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="per text-center" >
+
+      
+      <div class="l">
+
+        <div class="bob">
+          <h2 style="padding: 15px;text-align: center;">High performance</h2>
+          <p class="lead">Our smart algorithms run very fast to provide for you adequate info about your gift card. We value our customers time, that is why you can get a fast response on your request.</p>
+        </div>
+        <img src="/static/spped.png" style=" margin-top: -2%";>
+      </div>
+      
+          
+      <div style="padding: 15px;">
+        <h1 style="color: black; font-size: 25px;">Over 8750+ Gift Cards Balance have been checked on our site. Check yours now</h1>
+
+      </div>
+        
+
+      <a href="#balance" class="btn btn-info">TRY IT FOR FREE</a>
+        
+        
+   
+
+
+
+    </div>
+    <div class="last text-center" style="color: white;">
+      <p class="texts">as seen in</p>
+      <div class="immg container">
+        <img src="/static/streaming.jpg" width="100%" style="padding: 20px;">
+      </div>
+      <br>
+      <p>© giftcardlookup 2022 All right reserved.</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
